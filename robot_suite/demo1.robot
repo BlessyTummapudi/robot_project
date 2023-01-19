@@ -18,7 +18,7 @@ TC4
    ${r}   Set Variable   10
    ${area_circle}   Evaluate   3.14*${r}*${r}
    Log To Console    ${area_circle}
-   Create Directory
+
 
 
 
