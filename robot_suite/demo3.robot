@@ -1,8 +1,11 @@
 *** Settings ***
 Library    Collections
 Library    OperatingSystem
+Library    SeleniumLibrary
+Library    XML
+Library    String
 *** Variables ***
-${BROWSER_NAME}     chrome
+${BROWSER_NAME}     edge
 @{COLORS}   Black     Green       White
 ${MY_NAME}  Blessy
 &{Details}  name=blsy   key=1411  num=9666666
@@ -35,6 +38,25 @@ TC4
     &{emp_dic}      Create Dictionary   id=12   name=paul  
     Log To Console    ${emp_dic}[name]
 
+TC5
+    ${files}  List Files In Directory    C:\\Users\\40032486\\PycharmProjects\\robot_project\\robot_suite
+    Log To Console  ${files}
+
+TC6
+    ${a}    Set Variable    robot framework session
+    Log To Console    ${a}
+    ${b}    Convert To Upper Case    ${a}
+    Log To Console    ${b}
+    ${c}   Remove String    ${b}      SESSION
+    Log To Console    ${c}
+    
+TC7
+    ${num1}     Set Variable   $200,100
+    ${num2}     Set Variable    $100
+    ${num3}     Remove String    ${num1}    $   ,
+    ${num4}     Remove String    ${num2}    $
+    ${num}      Evaluate    ${num3}+${num4}
+    Log To Console    ${num}
 
 
 
