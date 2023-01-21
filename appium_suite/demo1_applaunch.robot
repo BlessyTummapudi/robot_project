@@ -22,14 +22,29 @@ TC1
     Click Element       xpath=//android.widget.TextView[@text='Sign in']
     sleep   5s
     [Teardown]      Close Application
+    Wait Until Page Contains Element    xpath=//*[@text='Dismiss']
+    Click Element    xpath=//*[@text='Dismiss']
+
+    Wait Until Page Contains Element    xpath=//android.widget.TextView[@text='Sign in']
+    Click Element       xpath=//android.widget.TextView[@text='Sign in']
+    Wait Until Page Contains Element    xpath=//android.widget.TextView[@text='Sign in']
+    Click Element       xpath=//android.widget.TextView[@text='Sign in']
+
+    Wait Until Page Contains Element    xpath=//android.widget.EditText[@content-desc="Enter an e-mail address or username"]    30s
+    Input Text    xpath=//android.widget.EditText[@content-desc="Enter an e-mail address or username"]    blessy.t@gmail.com
+    Wait Until Page Contains Element       xpath=//android.widget.EditText[@content-desc="Password"]    30s
+    Input Text      xpath=//android.widget.EditText[@content-desc="Password"]        blsy123
+    Wait Until Page Contains Element    xpath=//android.widget.Button[@content-desc="Sign in"]/android.widget.TextView    30s
+    Click Element    xpath=//android.widget.Button[@content-desc="Sign in"]/android.widget.TextView
+    Wait Until Page Contains Element        xpath=//*[contains(@text,'signing')]        30s
+    Element Should Contain Text   xpath=//*[contains(@text,'signing')]   There was an issue signing in
+    sleep   5s
 
 
 
 
 
 
-    #tagname=android.widget.TextView
-    #Text=Dismiss
 
 
 
