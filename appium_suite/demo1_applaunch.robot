@@ -21,7 +21,7 @@ TC1
     Wait Until Page Contains Element    xpath=//android.widget.TextView[@text='Sign in']
     Click Element       xpath=//android.widget.TextView[@text='Sign in']
     sleep   5s
-    [Teardown]      Close Application
+
     Wait Until Page Contains Element    xpath=//*[@text='Dismiss']
     Click Element    xpath=//*[@text='Dismiss']
 
@@ -39,7 +39,7 @@ TC1
     Wait Until Page Contains Element        xpath=//*[contains(@text,'signing')]        30s
     Element Should Contain Text   xpath=//*[contains(@text,'signing')]   There was an issue signing in
     sleep   5s
-
+    [Teardown]      Close Application
 
 
 
