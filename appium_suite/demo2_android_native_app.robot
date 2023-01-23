@@ -39,26 +39,26 @@ TC1 Sign Up
     Wait Until Page Contains Element    xpath=//android.widget.TextView[@text='Birthday']
     Click Element     xpath=//android.widget.TextView[@text='Birthday']
     Wait Until Page Contains Element        xpath=//android.widget.EditText[@text='Jun']
-    Click Element     xpath=//android.widget.EditText[@text='Jun']
-    Wait Until Page Contains Element        xpath=//android.widget.EditText[@text='Jun']
-    Clear Text    xpath=//android.widget.EditText[@text='Jun']
+    Click Element     xpath=//android.widget.EditText[@resource-id='android:id/numberpicker_input]
+    Wait Until Page Contains Element        xpath=//android.widget.EditText[@resource-id='android:id/numberpicker_input]
+    Clear Text    xpath=//android.widget.EditText[@resource-id='android:id/numberpicker_input]
     Input Text     xpath=//android.widget.EditText[@resource-id='android:id/numberpicker_input']    Dec
-    Wait Until Page Contains Element        xpath=//android.widget.EditText[@text='01']
-    Click Element     xpath=//android.widget.EditText[@text='01']
-    Wait Until Page Contains Element        xpath=//android.widget.EditText[@text='01']
-    Clear Text    xpath=//android.widget.EditText[@text='01']
+    Wait Until Page Contains Element        xpath=//android.widget.EditText[@resource-id='android:id/numberpicker_input']
+    Click Element     xpath=//android.widget.EditText[@resource-id='android:id/numberpicker_input']
+    Wait Until Page Contains Element        xpath=//android.widget.EditText[@resource-id='android:id/numberpicker_input']
+    Clear Text    xpath=//android.widget.EditText[@resource-id='android:id/numberpicker_input']
     Input Text     xpath=(//android.widget.EditText[@resource-id='android:id/numberpicker_input'])[2]     23
-    Wait Until Page Contains Element        xpath=//android.widget.EditText[@text='2000']
-    Click Element     xpath=//android.widget.EditText[@text='2000']
-    Wait Until Page Contains Element        xpath=//android.widget.EditText[@text='2000']
-    Clear Text    xpath=//android.widget.EditText[@text='2000']
+    Wait Until Page Contains Element        xpath=//android.widget.EditText[@resource-id='android:id/numberpicker_input']
+    Click Element     xpath=//android.widget.EditText[@resource-id='android:id/numberpicker_input']
+    Wait Until Page Contains Element        xpath=//android.widget.EditText[@resource-id='android:id/numberpicker_input']
+    Clear Text    xpath=//android.widget.EditText[@resource-id='android:id/numberpicker_input']
     Input Text     xpath=(//android.widget.EditText[@resource-id='android:id/numberpicker_input'])[3]     2001
     Wait Until Page Contains Element    xpath=//android.widget.Button[@text='OK']
     Click Element    xpath=//android.widget.Button[@text='OK']
-
     [Teardown]      Close Application
 
 #    //*[contains(@text,'THANK')]
+
 
 
 

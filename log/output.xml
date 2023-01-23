@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20230120 17:31:00.117" rpa="false" schemaversion="3">
-<suite id="s1" name="Demo1 Applaunch" source="C:\Users\40032486\PycharmProjects\robot_project\appium_suite\demo1_applaunch.robot">
-<test id="s1-t1" name="TC1" line="4">
+<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20230123 16:58:44.763" rpa="false" schemaversion="3">
+<suite id="s1" name="Demo3 Android Advance" source="C:\Users\40032486\PycharmProjects\robot_project\appium_suite\demo3_android_advance.robot">
+<test id="s1-t1" name="TC2 Poshmark" line="57">
 <kw name="Create Dictionary" library="BuiltIn">
 <var>&amp;{dic}</var>
-<arg>buildName=khan lt7</arg>
-<arg>projectName=khan project lt7</arg>
-<arg>userName=blessytummapudi_g23OhT</arg>
-<arg>accessKey=hapgkPCtxBZ7eVaHNoFS</arg>
+<arg>buildName=poshmark lt7</arg>
+<arg>projectName=poshmark project lt7</arg>
+<arg>userName=blsyt_xVcsl2</arg>
+<arg>accessKey=7LYJRNVShceWjKQEtSGz</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20230120 17:31:00.554" level="INFO">&amp;{dic} = { buildName=khan lt7 | projectName=khan project lt7 | userName=blessytummapudi_g23OhT | accessKey=hapgkPCtxBZ7eVaHNoFS }</msg>
-<status status="PASS" starttime="20230120 17:31:00.553" endtime="20230120 17:31:00.555"/>
+<msg timestamp="20230123 16:58:45.135" level="INFO">&amp;{dic} = { buildName=poshmark lt7 | projectName=poshmark project lt7 | userName=blsyt_xVcsl2 | accessKey=7LYJRNVShceWjKQEtSGz }</msg>
+<status status="PASS" starttime="20230123 16:58:45.134" endtime="20230123 16:58:45.137"/>
 </kw>
 <kw name="Open Application" library="AppiumLibrary">
 <arg>remote_url=http://hub.browserstack.com/wd/hub</arg>
 <arg>platformName=android</arg>
 <arg>deviceName=Google Pixel 3</arg>
-<arg>app=bs://01058a26ad86312dafac7d86f0bda1d7f21d3d3f</arg>
+<arg>app=bs://c67ad193928b48f6bf6e8c334080ff0d4615ea24</arg>
 <arg>platformVersion=9.0</arg>
 <arg>bstack:options=${dic}</arg>
 <doc>Opens a new application to given Appium server.
@@ -26,60 +26,119 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |
 | strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
-<status status="PASS" starttime="20230120 17:31:00.556" endtime="20230120 17:31:35.779"/>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20230123 16:58:46.750" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20230123 16:58:46.750" endtime="20230123 16:58:46.757"/>
+</kw>
+<msg timestamp="20230123 16:58:46.758" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20230123 16:58:46.758" level="FAIL">WebDriverException: Message: App Automate testing time has expired. Contact BrowserStack Support at https://www.browserstack.com/contact for extending your Free Trial.
+</msg>
+<status status="FAIL" starttime="20230123 16:58:45.138" endtime="20230123 16:58:46.760"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
 <arg>xpath=//*[@text='Dismiss']</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20230120 17:31:38.970" level="INFO">xpath criteria: //*[@text='Dismiss']
-xpath criteria: //*[@text='Dismiss']
-xpath criteria: //*[@text='Dismiss']</msg>
-<status status="PASS" starttime="20230120 17:31:35.779" endtime="20230120 17:31:38.971"/>
+<status status="NOT RUN" starttime="20230123 16:58:46.761" endtime="20230123 16:58:46.761"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>xpath=//*[@text='Dismiss']</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20230120 17:31:38.973" level="INFO">Clicking element 'xpath=//*[@text='Dismiss']'.</msg>
-<msg timestamp="20230120 17:31:39.660" level="INFO">xpath criteria: //*[@text='Dismiss']</msg>
-<status status="PASS" starttime="20230120 17:31:38.971" endtime="20230120 17:31:39.660"/>
+<status status="NOT RUN" starttime="20230123 16:58:46.761" endtime="20230123 16:58:46.761"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
-<arg>xpath=//android.widget.TextView[@text='Sign in']</arg>
+<arg>xpath=//android.widget.Button[@text='Search']</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20230120 17:31:40.973" level="INFO">xpath criteria: //android.widget.TextView[@text='Sign in']</msg>
-<status status="PASS" starttime="20230120 17:31:39.661" endtime="20230120 17:31:40.973"/>
+<status status="NOT RUN" starttime="20230123 16:58:46.761" endtime="20230123 16:58:46.761"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
-<arg>xpath=//android.widget.TextView[@text='Sign in']</arg>
+<arg>xpath=//android.widget.Button[@text='Search']</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20230120 17:31:40.975" level="INFO">Clicking element 'xpath=//android.widget.TextView[@text='Sign in']'.</msg>
-<msg timestamp="20230120 17:31:43.364" level="INFO">xpath criteria: //android.widget.TextView[@text='Sign in']</msg>
-<status status="PASS" starttime="20230120 17:31:40.973" endtime="20230120 17:31:43.364"/>
+<status status="NOT RUN" starttime="20230123 16:58:46.762" endtime="20230123 16:58:46.762"/>
 </kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230120 17:31:48.366" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20230120 17:31:43.365" endtime="20230120 17:31:48.366"/>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>xpath=//android.widget.TextView[@text='Arts and humanities']</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="NOT RUN" starttime="20230123 16:58:46.762" endtime="20230123 16:58:46.762"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//android.widget.TextView[@text='Arts and humanities']</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230123 16:58:46.762" endtime="20230123 16:58:46.762"/>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<var>&amp;{dic_arg}</var>
+<arg>strategy=android uiautomator</arg>
+<arg>selector=UiSelector().text("Art of Asia")</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="NOT RUN" starttime="20230123 16:58:46.762" endtime="20230123 16:58:46.762"/>
+</kw>
+<kw name="Execute Script" library="AppiumLibrary">
+<arg>mobile:scroll</arg>
+<arg>&amp;{dic_arg}</arg>
+<doc>Execute a variety of native, mobile commands that aren't associated
+with a specific endpoint. See [https://appium.io/docs/en/commands/mobile-command/|Appium Mobile Command]
+for more details.</doc>
+<status status="NOT RUN" starttime="20230123 16:58:46.763" endtime="20230123 16:58:46.763"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>android=UiSelector().text("Art of Asia")</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230123 16:58:46.763" endtime="20230123 16:58:46.763"/>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<var>&amp;{dic_arg}</var>
+<arg>strategy=android uiautomator</arg>
+<arg>selector=UiSelector().text("South Asia")</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="NOT RUN" starttime="20230123 16:58:46.763" endtime="20230123 16:58:46.763"/>
+</kw>
+<kw name="Execute Script" library="AppiumLibrary">
+<arg>mobile:scroll</arg>
+<arg>&amp;{dic_arg}</arg>
+<doc>Execute a variety of native, mobile commands that aren't associated
+with a specific endpoint. See [https://appium.io/docs/en/commands/mobile-command/|Appium Mobile Command]
+for more details.</doc>
+<status status="NOT RUN" starttime="20230123 16:58:46.763" endtime="20230123 16:58:46.764"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>android=UiSelector().text("South Asia")</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20230123 16:58:46.764" endtime="20230123 16:58:46.764"/>
 </kw>
 <kw name="Close Application" library="AppiumLibrary" type="TEARDOWN">
 <doc>Closes the current application and also close webdriver session.</doc>
-<status status="PASS" starttime="20230120 17:31:48.367" endtime="20230120 17:31:51.608"/>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20230123 16:58:46.766" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20230123 16:58:46.765" endtime="20230123 16:58:46.768"/>
 </kw>
-<status status="PASS" starttime="20230120 17:31:00.553" endtime="20230120 17:31:51.609"/>
+<msg timestamp="20230123 16:58:46.769" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20230123 16:58:46.770" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20230123 16:58:46.764" endtime="20230123 16:58:46.771">No application is open</status>
+</kw>
+<doc>Working with native app
+for automating sign up activity</doc>
+<status status="FAIL" starttime="20230123 16:58:45.133" endtime="20230123 16:58:46.772">WebDriverException: Message: App Automate testing time has expired. Contact BrowserStack Support at https://www.browserstack.com/contact for extending your Free Trial.
+
+
+Also teardown failed:
+No application is open</status>
 </test>
-<status status="PASS" starttime="20230120 17:31:00.122" endtime="20230120 17:31:51.610"/>
+<status status="FAIL" starttime="20230123 16:58:44.766" endtime="20230123 16:58:46.773"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Demo1 Applaunch">Demo1 Applaunch</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Demo3 Android Advance">Demo3 Android Advance</stat>
 </suite>
 </statistics>
 <errors>
+<msg timestamp="20230123 16:58:46.758" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20230123 16:58:46.769" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
 </errors>
 </robot>
