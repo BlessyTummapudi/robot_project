@@ -26,3 +26,12 @@ TC1
     ${a}  Handle Alert   action=ACCEPT   timeout=20s
     Log To Console    ${a}
     Element Should Contain    xpath=//span[text()='hello T']   hello T
+
+
+TC2
+    Open Browser    browser=chrome
+    @{output}   Run Keyword And Ignore Error    Click Element    xpath=//a
+    Log To Console    ${output}
+    Log To Console    ${output}[0]
+    Log To Console    ${output}[1]
+
