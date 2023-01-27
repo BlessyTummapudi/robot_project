@@ -3,7 +3,7 @@ Library  SeleniumLibrary
 
 *** Test Cases ***
 TC1
-   Open Browser   url=https://www.google.com/   browser=chrome
+   Open Browser   url=https://www.google.com/   browser=edge
    ${a}   Get Title
    Log To Console    ${a}
    Log    ${a}
